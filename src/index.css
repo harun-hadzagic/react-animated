@@ -12,6 +12,7 @@ body {
   background: linear-gradient(#222c31, #111d32);
   color: #d9e2f1;
   min-height: 100vh;
+  /* overflow: hidden; */
 }
 
 #main-header {
@@ -19,7 +20,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 80%;
-  max-width: 40rem;
+  /* max-width: 40rem; */
   margin: 2rem auto;
   color: #fff;
 }
@@ -69,12 +70,19 @@ body {
   z-index: 1;
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
   text-align: center;
+  overflow-wrap: normal;
+
 }
 
 #welcome-header-content h1 {
   font-size: 3rem;
   color: #fff;
   margin: 2rem 0;
+}
+@media only screen and (max-width: 600px) {
+  #welcome-header-content h1 {
+    font-size: 2rem;
+  }
 }
 
 #cta-link {
